@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Homework Helper">
+<rect x="5" y="5" width="118" height="118" rx="22" fill="#F1E9D8" stroke="#25251F" stroke-width="5"/>
+<path d="M22 54 64 22 106 54" fill="none" stroke="#25251F" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
+<path d="M33 50v52h62V50" fill="none" stroke="#25251F" stroke-width="6"/>
+<circle cx="64" cy="76" r="22" fill="#F06A3A" stroke="#25251F" stroke-width="5"/>
+<circle cx="64" cy="76" r="11" fill="none" stroke="#F1E9D8" stroke-width="4"/>
+<path d="M64 64v24M52 76h24" stroke="#F1E9D8" stroke-width="3"/>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "name": "Domácí spotřebiče — Homework Helper",
+  "short_name": "Spotřebiče",
+  "description": "Pomocník pro nastavení grilu a výběr programu pračky.",
+  "lang": "cs-CZ",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F1E9D8",
+  "theme_color": "#F1E9D8",
+  "icons": [
+    { "src": "./homework-helper-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./homework-helper-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

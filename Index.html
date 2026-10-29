@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Homework Helper — Domácí spotřebiče</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<link rel="icon" type="image/svg+xml" href="./homework-helper.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="./homework-helper-180.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F1E9D8">
+<meta name="apple-mobile-web-app-title" content="Domácí spotřebiče">
+</head>
+<body>
+<main>
+<section id="home">
+<h1>Domácí spotřebiče</h1>
+<p class="sub">Vyberte spotřebič a zjistěte správné nastavení.</p>
+<div class="home">
+<button class="tile" onclick="show('grill')"><b>Grill</b><span>Teplota a doba podle funkce, tloušťky a propečení</span></button>
+<button class="tile w" onclick="show('pracka')"><b>Pračka</b><span>Doporučení pracího programu podle náplně, barvy a typu prádla</span></button>
+</div>
+</section>
+
+<section id="grill" hidden>
+<button class="back" onclick="show('home')">← Spotřebiče</button>
+<h1>Grill</h1>
+<div class="step">1. Funkce</div>
+<div class="chips" id="fn"></div>
+<div class="step"><label for="t">2. Tloušťka v mm</label></div>
+<input id="t" type="number" inputmode="numeric" min="0" max="50" step="1" placeholder="např. 15" aria-describedby="thicknessHint">
+<p id="thicknessHint" class="n" aria-live="polite"></p>
+<div class="step">3. Stupeň propečení</div>
+<div class="chips" id="lv"></div>
+<div class="lcd" id="out" aria-live="polite"></div>
+<div id="tabbox"></div>
+</section>
+
+<section id="pracka" hidden>
+<button class="back" onclick="show('home')">← Spotřebiče</button>
+<h1>Pračka</h1>
+<p class="sub">Vyberte přibližnou hmotnost, barvu a typ prádla. Rádce doporučí dostupný program podle údajů k pračce.</p>
+
+<div class="wash-panel">
+  <div class="wash-step">1. Množství prádla</div>
+  <div class="wash-choices" id="washLoadChoices"></div>
+  <div class="wash-toggle-row">
+    <button type="button" class="wash-toggle" id="halfLoadToggle" aria-pressed="false">½ Poloviční náplň</button>
+    <span class="wash-note">Použijte jen při menší náplni. Nejde o kapacitu programu.</span>
+  </div>
+</div>
+
+<div class="wash-panel">
+  <div class="wash-step">2. Barva prádla</div>
+  <div class="wash-choices" id="washColorChoices"></div>
+</div>
+
+<div class="wash-panel">
+  <div class="wash-step">3. Typ prádla</div>
+  <div class="wash-choices" id="washTypeChoices"></div>
+</div>
+
+<div class="wash-panel wash-result" id="washOutput" aria-live="polite">
+  <p class="wash-empty">Zvolte všechny tři parametry.</p>
+</div>
+
+<div class="wash-panel">
+  <button type="button" class="wash-plain-button" id="showAllWashPrograms" aria-expanded="false">Zobrazit všechny programy pračky</button>
+  <div id="washAllPrograms" hidden></div>
+</div>
+<div class="wash-actions"><button type="button" class="wash-reset" id="washReset">Resetovat výběr</button></div>
+</section>
+</main>
+<script src="app.js" defer></script>
+</body>
+</html>

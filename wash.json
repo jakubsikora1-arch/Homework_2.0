@@ -1,0 +1,131 @@
+{
+  "programy": {
+    "velka_napln": {
+      "max_kg": 7,
+      "programy": [
+        {
+          "nazev": "BAVLNA",
+          "napln_kg": 7,
+          "teplota_c": 30,
+          "max_teplota_c": 90,
+          "otacky": 1200,
+          "max_otacky": 1200,
+          "popis": "Vhodné pro barevné bavlněné prádlo."
+        },
+        {
+          "nazev": "20 °C PRANÍ ZA STUDENA",
+          "napln_kg": 7,
+          "teplota_c": 20,
+          "max_teplota_c": 20,
+          "otacky": 1000,
+          "max_otacky": 1000,
+          "popis": "Různé tkaniny a barvy při nízké teplotě."
+        },
+        {
+          "nazev": "MÁCHÁNÍ",
+          "napln_kg": 7,
+          "teplota_c": null,
+          "max_teplota_c": null,
+          "otacky": 1000,
+          "max_otacky": 1000,
+          "popis": "Pro máchání jakéhokoli typu tkaniny."
+        },
+        {
+          "nazev": "ODČERPÁNÍ A ODSTŘEDĚNÍ",
+          "napln_kg": 7,
+          "teplota_c": null,
+          "max_teplota_c": null,
+          "otacky": 1000,
+          "max_otacky": 1200,
+          "popis": "Vypuštění vody a odstředění."
+        },
+        {
+          "nazev": "ECO 40–60",
+          "napln_kg": 7,
+          "teplota_c": 40,
+          "max_teplota_c": 90,
+          "otacky": 1200,
+          "max_otacky": 1200,
+          "popis": "Normálně znečištěné bavlněné prádlo."
+        }
+      ]
+    },
+    "stredni_napln": {
+      "max_kg": 3.5,
+      "programy": [
+        {
+          "nazev": "SYNTETIKA",
+          "napln_kg": 3.5,
+          "teplota_c": 40,
+          "max_teplota_c": 60,
+          "otacky": 1200,
+          "max_otacky": 1200,
+          "popis": "Různé syntetické tkaniny a barvy."
+        }
+      ]
+    },
+    "mala_napln": {
+      "max_kg": 1.5,
+      "programy": [
+        {
+          "nazev": "RYCHLÝ",
+          "napln_kg": 1,
+          "teplota_c": 30,
+          "max_teplota_c": 30,
+          "otacky": 800,
+          "max_otacky": 1200,
+          "popis": "Malé náplně a mírně znečištěné prádlo."
+        },
+        {
+          "nazev": "OSVĚŽENÍ PÁROU",
+          "napln_kg": 1,
+          "teplota_c": null,
+          "max_teplota_c": null,
+          "otacky": null,
+          "max_otacky": null,
+          "popis": "Ošetření párou proti záhybům a zápachu."
+        },
+        {
+          "nazev": "SPECIÁLNÍ 39'",
+          "napln_kg": 1,
+          "teplota_c": 30,
+          "max_teplota_c": 30,
+          "otacky": 800,
+          "max_otacky": 1200,
+          "popis": "Lehce znečištěné tkaniny, délka 39 minut."
+        },
+        {
+          "nazev": "JEMNÉ",
+          "napln_kg": 1.5,
+          "teplota_c": 30,
+          "max_teplota_c": 40,
+          "otacky": 400,
+          "max_otacky": 400,
+          "popis": "Jemné prádlo a nízká teplota."
+        },
+        {
+          "nazev": "HYGIENICKÝ PLUS 59'",
+          "napln_kg": 1.5,
+          "teplota_c": 60,
+          "max_teplota_c": 90,
+          "otacky": 1200,
+          "max_otacky": 1200,
+          "popis": "Hygienické praní bavlněného prádla."
+        }
+      ]
+    },
+    "bez_uvedene_naplne": {
+      "programy": [
+        {
+          "nazev": "ČIŠTĚNÍ BUBNU",
+          "napln_kg": null,
+          "teplota_c": 90,
+          "max_teplota_c": 90,
+          "otacky": null,
+          "max_otacky": null,
+          "popis": "Čištění pračky bez vloženého prádla. Doporučeno po 50 pracích cyklech."
+        }
+      ]
+    }
+  }
+}
